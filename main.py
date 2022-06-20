@@ -19,7 +19,7 @@ class JsonOperations:
         Аргументы: \n
         ref - ссылка на файл, \n
         name - имя файла без указания формата, \n
-        data_file - переменная,
+        file - переменная,
         значение которой сохраняется в JSON файл."""
 
         from json import dump
