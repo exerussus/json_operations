@@ -14,15 +14,15 @@ class JsonOperations:
         return data_file
 
     @staticmethod
-    def save(name, file, path=''):
+    def save(name, variable, path=''):
         """Сохраняет значение переменной в JSON файл.
         Аргументы: 
-        path - путь каталога где будет сохранён JSON вайл, 
+        path - путь каталога где будет сохранён JSON файл,
         name - имя файла без указания формата, 
-        file - переменная,
+        variable - экспортируемая переменная,
         значение которой сохраняется в JSON файл."""
 
         from json import dump
         with open(path + name + '.json', 'w') as add_info_file:
-            dump(file, add_info_file)
+            dump(variable, add_info_file)
 
